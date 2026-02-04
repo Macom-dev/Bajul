@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Construction Masters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root { --primary: #1aaeb8; --dark: #2c3e50; --text-grey: #7f8c8d; --white: #ffffff; }
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: var(--white); color: var(--dark); overflow-x: hidden; width: 100%; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 10; }
+
+        /* NAVBAR MOBILE BOTTOM */
+        nav { padding: 30px 0; display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 99999; }
+        .logo { font-size: 24px; font-weight: 700; color: var(--primary); text-transform: uppercase; cursor: pointer; }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { font-weight: 600; color: var(--dark); transition: 0.3s; font-size: 16px; display: flex; align-items: center; gap: 8px; }
+        .nav-links a i { display: none; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+
+        .page-header { padding: 150px 0 80px; background: #f8fbff; text-align: center; border-radius: 0 0 50px 50px; margin-bottom: 60px; }
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; padding-bottom: 80px; }
+        .blog-item { cursor: pointer; transition: 0.3s; }
+        .blog-item:hover { transform: translateY(-5px); }
+        .blog-img { width: 100%; height: 200px; object-fit: cover; border-radius: 15px; margin-bottom: 15px; }
+        .blog-date { color: #888; font-size: 14px; }
+        .blog-title { font-size: 1.5rem; margin: 10px 0; color: var(--dark); }
+
+        @media (max-width: 768px) {
+            nav { justify-content: center; padding: 15px 0; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+            .logo { font-size: 20px; }
+            .nav-links { position: fixed; bottom: 0; left: 0; width: 100%; background: white; padding: 10px 0; gap: 0; justify-content: space-around; box-shadow: 0 -2px 15px rgba(0,0,0,0.1); z-index: 999999; }
+            .nav-links a { flex-direction: column; font-size: 10px; color: var(--text-grey); }
+            .nav-links a i { display: block; font-size: 20px; margin-bottom: 4px; }
+            .nav-links a.active { color: var(--primary); }
+            
+            .page-header { padding-top: 40px; }
+            body { padding-bottom: 70px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo" onclick="window.location.href='index.html'">CONSTRUCTION</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="explore.html"><i class="fas fa-compass"></i> Explore</a></li>
+                <li><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+                <li><a href="projects.html"><i class="fas fa-building"></i> Project</a></li>
+                <li><a href="blog.html" class="active"><i class="fas fa-newspaper"></i> Blog</a></li>
+                <li><a href="https://wa.me/6285000000000" target="_blank"><i class="fab fa-whatsapp"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Construction News</h1>
+            <p>Berita terbaru dari dunia konstruksi.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="blog-grid">
+            <a href="Artikel1.html">
+            <div class="blog-item">
+                <img src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="blog-img">
+                <span class="blog-date">March 10, 2024</span>
+                <h3 class="blog-title">Tren Arsitektur Hijau</h3>
+                <p>Bagaimana bangunan ramah lingkungan menjadi standar baru.</p>
+            </div>
+            </a>
+            <div class="blog-item">
+                <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="blog-img">
+                <span class="blog-date">Feb 28, 2024</span>
+                <h3 class="blog-title">Keamanan Kerja Proyek</h3>
+                <p>Tips penting menjaga keselamatan pekerja.</p>
+            </div>
+            <a href="Artikel1.html">
+                <div class="blog-item">
+                    <img src="Trav1.jfif" class="blog-img">
+                    <span class="blog-date">March 10, 2024</span>
+                    <h3 class="blog-title">Liburan Tanpa Tumbang</h3>
+                    <p>Panduan Menjaga Stamina Agar Tetap Fit Selama Traveling.</p>
+                </div>
+            </a>
+            <a href="Artikel2.html">
+                <div class="blog-item">
+                    <img src="WisataLmg.jfif" class="blog-img">
+                    <span class="blog-date">March 10, 2024</span>
+                    <h3 class="blog-title">10 Tempat Wisata Lamongan</h3>
+                    <p>10 Tempat Wisata Lamongan: Bukan Sekadar Kota Soto.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

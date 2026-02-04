@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Tempat Wisata Lamongan: Bukan Sekadar Kota Soto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        /* Typography Utama */
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        .article-body p {
+            font-family: 'Merriweather', serif;
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 24px;
+            color: #2a2a2a;
+        }
+
+        .article-body h2, .article-body h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 800;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        /* Table of Contents */
+        #toc-container {
+            background-color: #eef5ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 5px solid #0d6efd;
+        }
+        #toc-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        #toc-list li a {
+            text-decoration: none;
+            color: #444;
+            display: block;
+            padding: 6px 0;
+            font-size: 1rem;
+            transition: 0.2s;
+            border-bottom: 1px dashed #ddd;
+        }
+        #toc-list li a:hover {
+            color: #0d6efd;
+            padding-left: 5px;
+            font-weight: 500;
+        }
+
+        /* Komponen Artikel */
+        .custom-blockquote {
+            border-left: 4px solid #ff5722;
+            background-color: #fff8f5;
+            padding: 25px;
+            font-style: italic;
+            font-family: 'Merriweather', serif;
+            font-size: 1.2rem;
+            margin: 35px 0;
+            color: #555;
+        }
+
+        .baca-juga {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-left: 4px solid #dc3545;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .baca-juga strong {
+            color: #dc3545;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-right: 5px;
+        }
+        .baca-juga a {
+            text-decoration: none;
+            font-weight: 700;
+            color: #222;
+            font-size: 1.05rem;
+        }
+        .baca-juga a:hover { color: #dc3545; text-decoration: underline; }
+
+        /* Social Share */
+        .share-btn {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 0.9rem;
+        }
+        .share-wa { background-color: #25D366; }
+        .share-fb { background-color: #1877F2; }
+        .share-tw { background-color: #1DA1F2; }
+        .share-cp { background-color: #6c757d; }
+        .share-btn:hover { opacity: 0.85; color: white; transform: translateY(-2px); }
+
+        /* Gambar & Caption */
+        .figure-caption {
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 10px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        /* Author Box */
+        .author-box {
+            background: white;
+            padding: 25px;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+
+        /* Back to Top */
+        #btn-back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none;
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+        }
+
+        /* Konten Lainnya */
+        .promo-gif {
+            width: 100%;
+            border-radius: 8px;
+            margin: 30px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .main-container {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            margin-top: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .main-container { padding: 20px; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TRAVEL<span class="text-warning">JATIM</span></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 main-container">
+                
+                <nav aria-label="breadcrumb" class="mb-3">
+                    <ol class="breadcrumb small text-uppercase fw-bold">
+                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-secondary">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-secondary">Jawa Timur</a></li>
+                        <li class="breadcrumb-item active text-danger" aria-current="page">Lamongan</li>
+                    </ol>
+                </nav>
+
+                <h1>10 Tempat Wisata Lamongan: Bukan Sekadar Kota Soto</h1>
+
+                <div class="d-flex align-items-center mb-4 text-muted small border-bottom pb-3">
+                    <span class="me-3 fw-bold text-uppercase">Travel Guide</span>
+                    <span class="me-3">|</span>
+                    <span class="me-3"><i class="far fa-clock me-1"></i> Kamis, 05 Februari 2026</span>
+                </div>
+
+                <div class="mb-4 d-flex align-items-center">
+                    <span class="me-2 fw-bold small text-uppercase">Bagikan:</span>
+                    <a href="whatsapp://send?text=10 Tempat Wisata Lamongan" class="share-btn share-wa"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="share-btn share-fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="share-btn share-tw"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="share-btn share-cp"><i class="fas fa-link"></i></a>
+                </div>
+
+                <figure class="figure w-100 mb-4">
+                    <img src="https://images.unsplash.com/photo-1596401057633-565652b5e289?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="figure-img img-fluid rounded w-100" alt="Ikon Wisata Lamongan">
+                    <figcaption class="figure-caption">Salah satu sudut keindahan wisata bahari di pesisir utara Jawa. (Ilustrasi: Unsplash)</figcaption>
+                </figure>
+
+                <div class="article-body">
+                    
+                    <p>Jika mendengar kata Lamongan, maka tidak akan asing dengan kulinernya yang khas yaitu Soto Lamongan dengan serbuk koya-nya yang gurih atau Pecel Lele yang merakyat. Kelezatan kuliner ini memang sudah melegenda hingga ke pelosok negeri.</p>
+                    
+                    <p>Namun, kita tidak akan membahas soal perut kali ini, melainkan sisi lain Lamongan sebagai kota destinasi wisata unggulan di Jawa Timur. Kabupaten yang terletak di pesisir utara Jawa ini ternyata menyimpan potensi pariwisata yang luar biasa.</p>
+                    
+                    <p>Ada beragam destinasi di daerah Lamongan yang menarik untuk dikunjungi, mulai dari wisata buatan yang modern, wisata alam pantai yang eksotis, situs sejarah, hingga wisata religi yang menenangkan hati.</p>
+                    
+                    <div class="text-center">
+                         <img src="https://media.giphy.com/media/l0HlOaQcLn2h4PerS/giphy.gif" alt="Promo Travel" class="promo-gif" style="max-height: 200px; object-fit: cover;">
+                         <p class="text-muted small"><em>Promo: Diskon Tiket Wahana Spesial Liburan (GIF)</em></p>
+                    </div>
+
+                    <p>Bagi kamu yang sedang merencanakan liburan, Lamongan bisa menjadi opsi paket lengkap yang ramah di kantong. Berikut adalah ulasan lengkap 10 tempat wisata daerah Lamongan yang wajib masuk dalam daftar kunjunganmu:</p>
+
+                    <div id="toc-container">
+                        <div class="d-flex justify-content-between align-items-center cursor-pointer" data-bs-toggle="collapse" data-bs-target="#toc-content">
+                            <h5 class="m-0 fw-bold text-primary"><i class="fas fa-list-ol me-2"></i>Daftar Isi</h5>
+                            <i class="fas fa-chevron-down text-secondary"></i>
+                        </div>
+                        <div class="collapse show mt-3" id="toc-content">
+                            <ul id="toc-list">
+                                </ul>
+                        </div>
+                    </div>
+
+                    <h2 id="poin1">1. Wisata Bahari Lamongan (WBL)</h2>
+                    <p>Wisata di daerah kawasan pantai Tanjung Kodok di pesisir utara pantai Jawa ini memiliki objek wisata yang memadukan antara keindahan laut dan berbagai wahana yang seru.</p>
+                    <p>WBL sudah lama menjadi ikon pariwisata Jawa Timur dan sering disebut sebagai "Dufan-nya Jawa Timur" namun dengan nilai tambah pemandangan laut lepas.</p>
+                    <p>Terdapat lebih dari 52 wahana seru yang wajib dicoba di Wisata Bahari Lamongan yang dapat dinikmati anak-anak hingga orang dewasa. Mulai dari wahana yang memacu adrenalin seperti Crazy Car, Speed Flip, dan Roller Coaster di tepi laut, hingga wahana edukatif seperti Rumah Sakit Hantu dan Istana Bawah Laut.</p>
+                    <p>Bagi keluarga, fasilitas di sini sangat lengkap, termasuk kolam renang Waterboom yang luas. Tiket masuknya bervariasi, mulai dari Rp 85.000 (untuk tiket terusan di hari biasa) hingga sekitar Rp 110.000 - Rp 130.000 saat akhir pekan atau musim liburan (harga dapat berubah sewaktu-waktu).</p>
+                    <p>Dengan satu tiket terusan, pengunjung sudah bisa menikmati puluhan fasilitas gratis di dalamnya. Jangan lupa berfoto di depan patung kepiting raksasa yang menjadi ikon gerbang masuk WBL ini.</p>
+
+                    <div class="baca-juga">
+                        <strong>Baca Juga:</strong> <a href="#">Panduan Lengkap Rute Menuju Wisata Bahari Lamongan</a>
+                    </div>
+
+                    <h2 id="poin2">2. Pantai Tanjung Kodok</h2>
+                    <p>Nama Pantai Tanjung Kodok terinspirasi dari keberadaan batu karang yang bentuknya menyerupai kodok yang sedang menghadap ke laut. Legenda setempat dan bentuk unik batuan karang inilah yang menjadi daya tarik utamanya.</p>
+                    <p>Lokasi ini juga memiliki nilai sejarah dan spiritual, karena sering dijadikan titik rukyatul hilal (melihat bulan) untuk menentukan awal bulan Ramadhan oleh pemerintah karena posisinya yang strategis menghadap ufuk barat.</p>
+                    
+                    <figure class="figure w-100 my-3">
+                        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="figure-img img-fluid rounded" alt="Pantai dengan batu karang">
+                        <figcaption class="figure-caption">Ilustrasi keindahan pantai dengan bebatuan karang. (Sumber: Unsplash)</figcaption>
+                    </figure>
+
+                    <p>Selain keunikan karangnya, terdapat sejumlah hotel dan resort di lokasi tersebut, salah satunya adalah Tanjung Kodok Beach Resort yang menawarkan pemandangan langsung ke laut Jawa.</p>
+                    <p>Wisatawan dapat menikmati panorama lautan lepas serta bebatuan karang dan goa yang memanjakan mata. Ombak di sini relatif tenang, sehingga sangat cocok untuk duduk bersantai menikmati angin sepoi-sepoi sambil menunggu matahari terbenam (sunset) yang terkenal indah di kawasan ini.</p>
+
+                    <h2 id="poin3">3. Goa Maharani</h2>
+                    <p>Tidak jauh dari kawasan Wisata Bahari Lamongan, atau lebih tepatnya berada di seberang jalannya, terdapat Goa Maharani. Destinasi ini sering disebut sebagai Maharani Zoo and Goa.</p>
+                    <p>Keunikan Goa Maharani adalah keberadaan stalaktit dan stalakmit dalam goa yang terbilang unik, karena terlihat seperti istana kristal.</p>
+                    <p>Goa ini ditemukan secara tidak sengaja oleh penggali tanah pada tahun 1992 dan kini telah dikelola dengan sangat baik. Di dalam goa, pengunjung tidak perlu takut kegelapan karena sudah dipasang lampu warna-warni yang menyorot bebatuan kapur, menciptakan suasana magis dan megah.</p>
+                    <p>Jalur pejalan kaki di dalam goa juga sudah tertata rapi sehingga aman untuk segala usia. Luas goa ini sekitar 2.500 meter persegi dan keajaiban alam di dalamnya sering disandingkan dengan keindahan goa-goa terkenal di luar negeri seperti Goa Altamira di Spanyol.</p>
+
+                    <blockquote class="custom-blockquote">
+                        "Fasilitasnya pun ramah anak dengan adanya area petting zoo di mana pengunjung bisa berinteraksi dan memberi makan hewan-hewan jinak."
+                    </blockquote>
+
+                    <h2 id="poin4">4. Maharani Zoo</h2>
+                    <p>Kebun binatang ini berada dalam satu kawasan dengan Goa Maharani. Tepatnya di Kecamatan Paciran, Kabupaten Lamongan. Konsep tempat ini adalah Geo-Zoo, yang menggabungkan wisata geologi (goa) dan konservasi satwa.</p>
+                    <p>Pengunjung bisa menjumpai lebih dari 400 jenis satwa di kebun binatang seluas 3,5 hektar ini. Termasuk beragam koleksi satwa langka seperti orang utan, wallaby, jerapah, beruang madu, harimau putih, dan singa putih, berdasarkan informasi dari situs resminya.</p>
+                    <p>Selain taman satwa, Maharani Zoo memiliki area museum dan galeri satwa yang berisi koleksi fosil satwa hampir punah, seperti kerangka ikan paus biru raksasa dan beruang putih. Ini adalah tempat yang sangat edukatif bagi anak-anak untuk mengenal dunia hewan, baik yang masih hidup maupun yang sudah menjadi sejarah.</p>
+                    <p>Fasilitasnya pun ramah anak dengan adanya area petting zoo di mana pengunjung bisa berinteraksi dan memberi makan hewan-hewan jinak.</p>
+
+                    <h2 id="poin5">5. Pantai Kutang</h2>
+                    <p>Jangan kaget dulu mendengar namanya. Pantai Kutang yang berlokasi di Desa Labuhan, Kecamatan Brondong ini memang memiliki nama yang menggelitik. Konon, nama ini muncul karena dahulu warga sering menemukan pakaian dalam (kutang) yang tersangkut di pohon mangrove.</p>
+                    <p>Namun, di balik namanya yang unik, pantai ini menyuguhkan pesona alam yang luar biasa cantik. Daya tarik utama Pantai Kutang adalah hamparan pasir putih yang berpadu dengan hutan mangrove yang asri.</p>
+                    <p>Pengelola setempat telah membangun jembatan kayu panjang berwarna-warni yang membelah area hutan mangrove menuju ke arah laut. Jembatan ini menjadi spot foto favorit para wisatawan karena instagramable banget.</p>
+                    <p>Saat air surut, kita bisa melihat bebatuan karang dan biota laut kecil. Waktu terbaik berkunjung ke sini adalah sore hari, karena perpaduan siluet jembatan kayu, pohon bakau, dan matahari terbenam menciptakan pemandangan siluet yang sangat romantis dan menenangkan.</p>
+                    <p>Tiket masuknya pun sangat murah meriah, sehingga cocok untuk wisata hemat.</p>
+
+                    <div class="baca-juga">
+                        <strong>Baca Juga:</strong> <a href="#">Rekomendasi Kuliner Khas Lamongan Selain Soto dan Pecel Lele</a>
+                    </div>
+
+                    <h2 id="poin6">6. Waduk Gondang</h2>
+                    <p>Bergeser dari wisata pantai, Lamongan juga punya wisata air tawar yaitu Waduk Gondang yang terletak di Kecamatan Sugio, sekitar 19 km dari pusat kota Lamongan. Waduk ini sebenarnya berfungsi sebagai sarana irigasi pertanian, namun karena keindahannya, tempat ini disulap menjadi destinasi wisata.</p>
+                    <p>Pemandangan di Waduk Gondang sangat asri dengan pepohonan besar yang rindang di sekelilingnya, cocok untuk ngadem atau piknik menggelar tikar bersama keluarga.</p>
+                    <p>Salah satu aktivitas favorit di sini adalah menyewa perahu motor atau perahu bebek untuk berkeliling waduk dan mengunjungi pulau kecil yang ada di tengahnya yang dinamakan Pulau Dewa.</p>
+                    <p>Selain itu, bagi yang hobi memancing, Waduk Gondang adalah surga karena banyaknya jenis ikan air tawar di sini. Di area ini juga terdapat area perkemahan yang sering digunakan oleh anak sekolah maupun komunitas pecinta alam.</p>
+
+                    <h2 id="poin7">7. Gunung Pegat</h2>
+                    <p>Lamongan memang dikenal dengan dataran rendahnya, namun ada satu area perbukitan kapur yang unik bernama Gunung Pegat yang terletak di Kecamatan Babat.</p>
+                    <p>Nama "Pegat" dalam bahasa Jawa berarti "cerai" atau "pisah". Ada mitos yang beredar di masyarakat bahwa pasangan yang datang ke sini hubungannya bisa retak, namun tentu saja itu hanya mitos belaka.</p>
+                    <p>Secara visual, Gunung Pegat menawarkan panorama eksotis berupa jajaran bukit kapur yang warnanya kontras dengan langit biru dan pepohonan hijau di sekitarnya. Bekas galian tambang kapur di sini menciptakan tekstur dinding bukit yang artistik dan sering dijadikan latar belakang foto pre-wedding atau fotografi model.</p>
+                    <p>Pemandangan dari atas bukit sangat memukau, kita bisa melihat hamparan sawah dan aktivitas kota Babat dari ketinggian. Tempat ini sangat cocok bagi kamu pemburu foto landscape atau sekadar ingin menikmati angin sepoi-sepoi di ketinggian.</p>
+
+                    <h2 id="poin8">8. Masjid Namira</h2>
+                    <p>Beralih ke wisata religi, Lamongan memiliki sebuah masjid yang viral dan fenomenal, yaitu Masjid Namira yang terletak di Kecamatan Tikung. Masjid ini digadang-gadang memiliki nuansa yang mirip dengan Masjidil Haram di Mekkah dan Masjid Nabawi di Madinah.</p>
+                    <p>Arsitekturnya sangat megah namun tetap elegan. Salah satu daya tarik utamanya adalah adanya Kiswah (kain penutup Ka'bah) asli yang didatangkan langsung dari Arab Saudi dan dipajang di area mihrab imam.</p>
+                    <p>Karpetnya yang tebal dan aroma parfum khas Timur Tengah yang semerbak membuat jamaah merasa seolah-olah sedang beribadah di Tanah Suci. Masjid Namira juga memiliki fasilitas yang sangat memanjakan jamaah, mulai dari ketersediaan kursi roda, air minum gratis, hingga seringkali disediakan makanan gratis bagi jamaah Jumat atau musafir.</p>
+                    <p>Suasana yang sejuk dan damai membuat siapa saja betah berlama-lama berdzikir di sini.</p>
+
+                    <div class="text-center my-4">
+                         <img src="https://media.giphy.com/media/xT0xeuOy2Fcl9vDGiA/giphy.gif" alt="Travel Safe" class="promo-gif" style="max-height: 200px; object-fit: cover;">
+                         <p class="text-muted small"><em>Tetap Jaga Stamina Saat Traveling! (GIF)</em></p>
+                    </div>
+
+                    <h2 id="poin9">9. Masjid Agung Lamongan</h2>
+                    <p>Sebagai ikon pusat kota, Masjid Agung Lamongan berdiri megah di sisi barat Alun-alun Kota Lamongan. Masjid ini memiliki ciri khas arsitektur Jawa yang kental dengan atap bersusun (tajug), namun dipadukan dengan sentuhan modern.</p>
+                    <p>Ciri khas yang paling mencolok adalah adanya dua menara kembar yang menjulang tinggi di bagian depan, memberikan kesan agung dan kokoh. Di halaman depan masjid, terdapat gentong air dan batu pasujudan yang konon merupakan peninggalan masa penyebaran Islam oleh Sunan Giri.</p>
+                    <p>Masjid ini tidak hanya menjadi tempat ibadah, tetapi juga pusat kegiatan keagamaan masyarakat Lamongan. Lokasinya yang sangat strategis membuat masjid ini selalu ramai dikunjungi wisatawan yang ingin beristirahat sejenak setelah lelah berkeliling kota.</p>
+                    <p>Interior masjid didominasi ukiran kayu jati yang indah, menambah kekhusyukan saat beribadah.</p>
+
+                    <h2 id="poin10">10. Alun-alun Lamongan</h2>
+                    <p>Menutup perjalanan wisata di Lamongan, tidak lengkap rasanya jika tidak mampir ke Alun-alun Lamongan. Terletak tepat di jantung kota, alun-alun ini telah direvitalisasi menjadi ruang terbuka hijau yang sangat nyaman dan modern.</p>
+                    <p>Ikon utama dari Alun-alun Lamongan adalah Bianglala (Kincir Angin) raksasa yang bisa dinaiki pengunjung. Dari atas bianglala, kita bisa melihat pemandangan kota Lamongan dari ketinggian, terutama saat malam hari ketika lampu-lampu kota mulai menyala.</p>
+                    <p>Selain bianglala, terdapat juga monumen pesawat tempur TNI AU yang menjadi spot foto favorit anak-anak. Fasilitas lain seperti taman baca, area bermain anak, air mancur menari, dan lintasan jogging tersedia lengkap.</p>
+                    <p>Di sekitar alun-alun, terutama saat malam hari, berjejer penjual kuliner khas Lamongan yang siap memanjakan lidah, mulai dari Tahu Campur, Nasi Boran, hingga tentu saja Soto Lamongan. Ini adalah tempat yang sempurna untuk menutup hari liburanmu di Lamongan.</p>
+
+                    <h2 id="kesimpulan">Kesimpulan</h2>
+                    <p>Itulah 10 rekomendasi tempat wisata di Lamongan yang membuktikan bahwa kota ini punya segalanya. Mulai dari wisata pantai yang menyegarkan mata, wisata edukasi satwa, hingga wisata religi yang menenangkan jiwa.</p>
+                    <p>Jadi, jika musim liburan tiba, jangan ragu untuk mengarahkan kendaraanmu menuju Lamongan. Persiapkan fisik dan kamera terbaikmu, karena Lamongan siap memberikan pengalaman liburan yang tak terlupakan.</p>
+                    <p>Selamat berlibur!</p>
+
+                </div>
+
+                <hr class="my-5">
+
+                <div class="mb-5">
+                    <h3 class="mb-4"><i class="fas fa-question-circle text-danger"></i> Pertanyaan Umum (FAQ)</h3>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                                    Berapa harga tiket masuk Wisata Bahari Lamongan (WBL)?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Tiket masuk WBL bervariasi mulai dari <strong>Rp 85.000</strong> (hari biasa) hingga sekitar <strong>Rp 110.000 - Rp 130.000</strong> saat akhir pekan atau musim liburan.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Apa daya tarik utama Goa Maharani?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Keunikan Goa Maharani adalah keberadaan stalaktit dan stalakmit yang terlihat seperti istana kristal. Goa ini juga dilengkapi dengan lampu warna-warni yang menciptakan suasana magis.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    Di mana lokasi wisata religi terbaik di Lamongan?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Anda bisa mengunjungi <strong>Masjid Namira</strong> di Kecamatan Tikung yang viral dengan nuansa mirip Masjidil Haram, atau <strong>Masjid Agung Lamongan</strong> yang menjadi ikon pusat kota.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="author-box d-flex align-items-start">
+                    <img src="https://ui-avatars.com/api/?name=Travel+Expert&background=dc3545&color=fff&size=128" class="rounded-circle me-4 shadow-sm" width="80" alt="Penulis">
+                    <div>
+                        <h5 class="fw-bold mb-1">Travel Expert</h5>
+                        <p class="text-danger small fw-bold text-uppercase mb-2">Penulis Wisata Jawa Timur</p>
+                        <p class="mb-0 text-muted small">Seorang penjelajah yang gemar mengulik destinasi tersembunyi di Indonesia. Berdedikasi untuk memberikan panduan perjalanan yang akurat dan inspiratif bagi para pelancong.</p>
+                    </div>
+                </div>
+
+                <div class="my-5 text-center">
+                    <p class="fw-bold mb-3">Suka artikel ini? Bagikan sekarang:</p>
+                    <a href="whatsapp://send?text=10 Tempat Wisata Lamongan" class="share-btn share-wa btn-lg"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="share-btn share-fb btn-lg"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="share-btn share-tw btn-lg"><i class="fab fa-twitter"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white py-5 mt-4 border-top">
+        <div class="container">
+            <h3 class="mb-4 fw-bold border-start border-4 border-danger ps-3">Artikel Terkait</h3>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1555412619-fa9292725b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Kuliner Lamongan" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-dark">5 Kuliner Legendaris Lamongan</h5>
+                            <p class="card-text small text-muted">Selain soto, cicipi nasi boran dan tahu campur yang menggugah selera.</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm stretched-link rounded-pill px-3">Baca Artikel <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Wisata Jatim" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-dark">Itinerary 3 Hari 2 Malam di Jatim</h5>
+                            <p class="card-text small text-muted">Rencana perjalanan lengkap menyusuri pantai utara Jawa Timur.</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm stretched-link rounded-pill px-3">Baca Artikel <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Tips Traveling" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-dark">Tips Traveling Hemat Bersama Keluarga</h5>
+                            <p class="card-text small text-muted">Cara mengatur anggaran liburan agar tetap menyenangkan tanpa boncos.</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm stretched-link rounded-pill px-3">Baca Artikel <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0 small opacity-75">&copy; 2026 TravelJatim. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button type="button" class="btn btn-danger shadow" id="btn-back-to-top" title="Kembali ke atas">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Logic untuk TOC Otomatis
+        document.addEventListener("DOMContentLoaded", function() {
+            const tocList = document.getElementById("toc-list");
+            const headers = document.querySelectorAll(".article-body h2, .article-body h3");
+            
+            headers.forEach((header, index) => {
+                const id = header.id || "toc-" + index;
+                header.id = id;
+                
+                const listItem = document.createElement("li");
+                const link = document.createElement("a");
+                link.href = "#" + id;
+                link.textContent = header.textContent;
+                
+                // Indentasi untuk H3 jika ada
+                if(header.tagName === "H3") {
+                    link.style.paddingLeft = "20px";
+                    link.style.fontSize = "0.9em";
+                }
+
+                listItem.appendChild(link);
+                tocList.appendChild(listItem);
+            });
+        });
+
+        // Logic untuk Tombol Back to Top
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
